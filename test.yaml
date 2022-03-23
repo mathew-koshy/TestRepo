@@ -1,12 +1,5 @@
----
-createdTime: null
-createdUser: null
-updatedTime: null
-updatedUser: null
-id: null
-resourceId: null
-accountId: null
-lifecycleId: null
-originalConfig: null
-proposedConfig: null
-predictedImpact: null
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: testName
+  MemorySize: testMemorySize
+  Timeout: testTimeout
