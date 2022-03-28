@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: datadog-ForwarderStack-1J3285YZYRPJW-Forwarder-XJZY19MG8Q5Q
+  MemorySize: 512
+  Timeout: 15
