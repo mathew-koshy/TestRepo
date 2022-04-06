@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: ticket-insert-db-entry
+  MemorySize: 512
+  Timeout: 15
