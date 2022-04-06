@@ -1,3 +1,4 @@
+---
 Type: AWS::Lambda::Function
 Properties: 
   FunctionName: ticket-insert-db-entry
