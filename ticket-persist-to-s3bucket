@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: ticket-persist-to-s3bucket
+  MemorySize: 
+  Timeout: 
