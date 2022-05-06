@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: sedai-onboard-post-confirmation-housekeeping
+  MemorySize: 
+  Timeout: 
