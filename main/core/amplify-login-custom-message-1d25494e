@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-login-custom-message-1d25494e
+  MemorySize: 
+  Timeout: 
