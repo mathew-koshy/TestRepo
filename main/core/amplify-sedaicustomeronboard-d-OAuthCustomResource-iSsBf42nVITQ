@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-sedaicustomeronboard-d-OAuthCustomResource-iSsBf42nVITQ
+  MemorySize: 
+  Timeout: 
