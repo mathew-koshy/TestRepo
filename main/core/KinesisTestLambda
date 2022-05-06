@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: KinesisTestLambda
+  MemorySize: 
+  Timeout: 
