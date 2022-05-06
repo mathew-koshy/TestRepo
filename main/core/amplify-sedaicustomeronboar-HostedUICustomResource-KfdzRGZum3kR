@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-sedaicustomeronboar-HostedUICustomResource-KfdzRGZum3kR
+  MemorySize: 
+  Timeout: 
