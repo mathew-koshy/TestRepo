@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-sedaicustomeronbo-UpdateRolesWithIDPFuncti-lDe4uLwj2a2O
+  MemorySize: 
+  Timeout: 
