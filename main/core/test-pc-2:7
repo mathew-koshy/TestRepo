@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: test-pc-2:7
+  MemorySize: 
+  Timeout: 
