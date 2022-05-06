@@ -1,0 +1,370 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: ticket-persist-to-s3bucket
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: getQuote
+  MemorySize: 130
+  Timeout: 50
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: ticket-insert-db-entry
+  MemorySize: 666
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-login-verify-auth-challenge-1d25494e
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: sedai-onboard-post-confirmation-housekeeping
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: getQuote-sandbox
+  MemorySize: 
+  Timeout: 47
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-sedaicustomeronbo-HostedUIProvidersCustomR-ULDEtfIDV2v8
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: getQuote_OOM
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: LicenseGenerator
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-login-verify-auth-challenge-40a56452
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: ticket-publish-to-datastream
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-sedaicustomeronboard--UserPoolClientLambda-kj5r6a26VwC7
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: oddOrEven
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: datadog-DatadogPolicyMacr-DatadogPolicyMacroMacroF-1DATUC3EACWDE
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-sedaicustomermgtui-de-UserPoolClientLambda-QE971dUjOXjg
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: sedai-onboard-health-check
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: KinesisConsumerTest
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-sedaicustomeronbo-UpdateRolesWithIDPFuncti-lDe4uLwj2a2O
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: test-pc-2:5
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-login-define-auth-challenge-1d25494e
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: test-pc-2:7
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: sedai-onboard-provision-success
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: multiply
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: datadog-ForwarderStack-1J3285YZYRPJW-Forwarder-XJZY19MG8Q5Q
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: sedaiTest_nz3ttmu
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: sedai-onboard-trigger-build
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: add
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: ProcessMarketplaceContractUpdates
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: aws-controltower-NotificationForwarder
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: dataDistributor
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-login-define-auth-challenge-40a56452
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: aws-controltower-NotificationForwarder
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-sedaicustomeronboard-d-OAuthCustomResource-iSsBf42nVITQ
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: ApiTokenGenerator
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: getQuote:12
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: TestFunctionHelloWorld2
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: getQuote:11
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: getQuote:10
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: timeoutTest
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: tracing-test-client
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-sedaicustomeronboard-dev-2-RoleMapFunction-DjasuESulugh
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-login-create-auth-challenge-40a56452
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: fullstack-restapi-dev-formSubmit
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-login-create-auth-challenge-1d25494e
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: add
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-sedaicustomeronboar-HostedUICustomResource-KfdzRGZum3kR
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: getQuote-test
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: enabletracingtest
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: ConfirmMarketplaceSubscription
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: datadog-ForwarderStack-1J3285YZ-ForwarderZipCopier-13T1VUGVFXO90
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: test-pc-2
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: testFn
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: sedai-onboard-safety-check
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: StartupKeyGenerator
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: AdminQueriesffad4895-dev
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: ticket-assign-case
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: enabletracingtest:2
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: trace-test-endpoint
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: divide
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: fullstack-tasks-dev-testEndpoint
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: subtract
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: TestFunctionHelloWorld
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: KinesisTestLambda
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-login-custom-message-1d25494e
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-sedaicustomermgtui-d-authTriggerFn7FCFA449-RQOD0u3yUMmT
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: aws-controltower-NotificationForwarder
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: HelloWorld:1
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: test-pc-signal
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: fullstack-restapi-dev-custom-resource-apigw-cw-role
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-sedaicustomermgtu-UpdateRolesWithIDPFuncti-cwHw2HMo7Mgr
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: HelloWorld
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-login-custom-message-40a56452
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: add
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: datadog-forwarder-Forwarder-qYj6V0EGvQm1
+  MemorySize: 
+  Timeout: 
