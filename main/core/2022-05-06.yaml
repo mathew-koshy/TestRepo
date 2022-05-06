@@ -1,0 +1,10 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: getQuote
+  MemorySize: 347
+  Timeout: 50
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: getQuote-sandbox
+  MemorySize: 
+  Timeout: 20
