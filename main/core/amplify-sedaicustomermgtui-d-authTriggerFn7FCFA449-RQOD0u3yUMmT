@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-sedaicustomermgtui-d-authTriggerFn7FCFA449-RQOD0u3yUMmT
+  MemorySize: 
+  Timeout: 
