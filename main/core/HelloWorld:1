@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: HelloWorld:1
+  MemorySize: 
+  Timeout: 
