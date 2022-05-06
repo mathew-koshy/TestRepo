@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-sedaicustomeronboard--UserPoolClientLambda-kj5r6a26VwC7
+  MemorySize: 
+  Timeout: 
