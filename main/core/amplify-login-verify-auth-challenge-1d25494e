@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-login-verify-auth-challenge-1d25494e
+  MemorySize: 
+  Timeout: 
