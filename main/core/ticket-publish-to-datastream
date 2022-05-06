@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: ticket-publish-to-datastream
+  MemorySize: 
+  Timeout: 
