@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: amplify-sedaicustomeronboard-dev-2-RoleMapFunction-DjasuESulugh
+  MemorySize: 
+  Timeout: 
