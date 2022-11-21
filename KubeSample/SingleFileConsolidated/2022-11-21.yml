@@ -1,0 +1,42 @@
+- sedai-core-worker
+      numReplicas: 2
+      kubeContainerConfigStateMap:
+          sedai-core:
+              cpuRequest: 100m
+              cpuLimit: 200m
+              memoryRequest: 100MB
+              memoryLimit: 200MB
+          sedai-exporter:
+              cpuRequest: 50m
+              cpuLimit: 80m
+              memoryRequest: 80MB
+              memoryLimit: 180MB
+- sedai-leader-worker
+      numReplicas: 2
+      kubeContainerConfigStateMap:
+          sedai-core:
+              cpuRequest: 100m
+              cpuLimit: 200m
+              memoryRequest: 100MB
+              memoryLimit: 200MB
+          sedai-exporter:
+              cpuRequest: 50m
+              cpuLimit: 80m
+              memoryRequest: 80MB
+              memoryLimit: 180MB
+- sedai-db
+      numReplicas: 2
+      kubeContainerConfigStateMap:
+          postgres:
+              cpuRequest: 100m
+              cpuLimit: 200m
+              memoryRequest: 100MB
+              memoryLimit: 200MB
+- sedai-tsdb
+      numReplicas: 2
+      kubeContainerConfigStateMap:
+          grafana:
+              cpuRequest: 100m
+              cpuLimit: 200m
+              memoryRequest: 100MB
+              memoryLimit: 200MB
