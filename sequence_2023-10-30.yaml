@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: simple-lambda-ac-test
+  MemorySize: 128
+  Timeout: 59
