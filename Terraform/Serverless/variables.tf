@@ -1,19 +1,19 @@
 variable "memory_size" {
-  type = number
-  default = 256
+  type    = number
+  default = 128
 }
 
 variable "timeout" {
-  type = number
-  default = 15
+  type    = number
+  default = 22
 }
 
 variable "provisioned_concurrency" {
-  type = number
-  default = 5
+  type    = number
+  default = 0
 }
 
 variable "reserved_concurrency" {
-  type = number
+  type    = number
   default = 0
 }
