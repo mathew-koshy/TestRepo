@@ -6,8 +6,10 @@ variable "memory_size" {
 }
 
 variable "timeout" {
-  type = number
-  default = 15
+  type = map(number)
+  default = {
+    time = 2
+  }
 }
 
 variable "provisioned_concurrency" {
