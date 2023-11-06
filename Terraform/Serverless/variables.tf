@@ -1,5 +1,5 @@
 variable "memory_size" {
-  type = map(int)
+  type = map(number)
   default = {
     mem = 2
   }
