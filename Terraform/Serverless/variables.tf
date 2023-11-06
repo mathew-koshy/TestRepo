@@ -1,6 +1,8 @@
 variable "memory_size" {
-  type = number
-  default = 256
+  type = map(string)
+  default = {
+    mem = 2
+  }
 }
 
 variable "timeout" {
