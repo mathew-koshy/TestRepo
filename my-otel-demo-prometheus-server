@@ -1,0 +1,52 @@
+Deployment: my-otel-demo-prometheus-server
+ClusterName: sedai-labs-02-us-east-1
+NameSpace: default
+---
+type: "KubeResourceConfigState"
+replicas: 1
+kubeContainerConfigStateMap:
+  prometheus-server:
+    cpuLimitValue:
+      type: "K8sCpuValue"
+      value: 0.3
+      metricUnit: "CORES"
+      humanReadableRepresentation: "300.000m"
+      machineFriendlyRepresentation: "300m"
+    cpuRequestValue:
+      type: "K8sCpuValue"
+      value: 0.15
+      metricUnit: "CORES"
+      humanReadableRepresentation: "150.000m"
+      machineFriendlyRepresentation: "150m"
+    memoryLimitValue:
+      type: "MemoryValue"
+      value: 1.572864E8
+      metricUnit: "BYTES"
+      humanReadableRepresentation: "150 MiB"
+      machineFriendlyRepresentation: "150 MiB"
+    memoryRequestValue:
+      type: "MemoryValue"
+      value: 7.86432E7
+      metricUnit: "BYTES"
+      humanReadableRepresentation: "75 MiB"
+      machineFriendlyRepresentation: "75 MiB"
+    containerImage: null
+    cpuRequestNotSet: false
+    cpuLimitNotSet: false
+    memoryRequestNotSet: false
+    memoryLimitNotSet: false
+    ports: null
+    args: null
+    command: null
+    envs: null
+    livenessProbe: null
+    readinessProbe: null
+    securityContext: null
+    memoryLimitBytes: 1.572864E+8
+    memoryRequestBytes: 7.86432E+7
+    cpuLimit: "0.3"
+    cpuRequest: "0.15"
+dnsPolicy: null
+restartPolicy: null
+additionalParams: null
+hpaSpec: null
