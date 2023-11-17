@@ -1,0 +1,93 @@
+Deployment: sedai-smart-agent-jt57j5ya
+ClusterName: sedai-gcp-test-gke-us-central1
+NameSpace: sedai
+---
+type: "KubeResourceConfigState"
+replicas: 1
+kubeContainerConfigStateMap:
+  sedai-smart-agent:
+    cpuLimitValue:
+      type: "K8sCpuValue"
+      value: 0.5
+      metricUnit: "CORES"
+      humanReadableRepresentation: "500.000m"
+      machineFriendlyRepresentation: "500m"
+    cpuRequestValue:
+      type: "K8sCpuValue"
+      value: 0.5
+      metricUnit: "CORES"
+      humanReadableRepresentation: "500.000m"
+      machineFriendlyRepresentation: "500m"
+    memoryLimitValue:
+      type: "MemoryValue"
+      value: 2.147483648E9
+      metricUnit: "BYTES"
+      humanReadableRepresentation: "2 GiB"
+      machineFriendlyRepresentation: "2 GiB"
+    memoryRequestValue:
+      type: "MemoryValue"
+      value: 1.073741824E9
+      metricUnit: "BYTES"
+      humanReadableRepresentation: "1 GiB"
+      machineFriendlyRepresentation: "1 GiB"
+    containerImage: null
+    cpuRequestNotSet: false
+    cpuLimitNotSet: false
+    memoryRequestNotSet: false
+    memoryLimitNotSet: false
+    ports: null
+    args: null
+    command: null
+    envs: null
+    livenessProbe: null
+    readinessProbe: null
+    securityContext: null
+    memoryLimitBytes: 2147483648
+    memoryRequestBytes: 1073741824
+    cpuLimit: "0.5"
+    cpuRequest: "0.5"
+  sedai-smart-agent-logs:
+    cpuLimitValue:
+      type: "K8sCpuValue"
+      value: 0.05
+      metricUnit: "CORES"
+      humanReadableRepresentation: "50.000m"
+      machineFriendlyRepresentation: "50m"
+    cpuRequestValue:
+      type: "K8sCpuValue"
+      value: 0.02
+      metricUnit: "CORES"
+      humanReadableRepresentation: "20.000m"
+      machineFriendlyRepresentation: "20m"
+    memoryLimitValue:
+      type: "MemoryValue"
+      value: 2.68435456E8
+      metricUnit: "BYTES"
+      humanReadableRepresentation: "256 MiB"
+      machineFriendlyRepresentation: "256 MiB"
+    memoryRequestValue:
+      type: "MemoryValue"
+      value: 6.7108864E7
+      metricUnit: "BYTES"
+      humanReadableRepresentation: "64 MiB"
+      machineFriendlyRepresentation: "64 MiB"
+    containerImage: null
+    cpuRequestNotSet: false
+    cpuLimitNotSet: false
+    memoryRequestNotSet: false
+    memoryLimitNotSet: false
+    ports: null
+    args: null
+    command: null
+    envs: null
+    livenessProbe: null
+    readinessProbe: null
+    securityContext: null
+    memoryLimitBytes: 268435456
+    memoryRequestBytes: 67108864
+    cpuLimit: "0.05"
+    cpuRequest: "0.02"
+dnsPolicy: null
+restartPolicy: null
+additionalParams: null
+hpaSpec: null
