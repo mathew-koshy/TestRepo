@@ -1,23 +1,19 @@
 variable "memory_size" {
-  type = map(number)
-  default = {
-    mem = 2
-  }
+  type    = map(number)
+  default = 512
 }
 
 variable "timeout" {
-  type = map(number)
-  default = {
-    time = 2
-  }
+  type    = map(number)
+  default = 15
 }
 
 variable "provisioned_concurrency" {
-  type = number
-  default = 5
+  type    = number
+  default = 0
 }
 
 variable "reserved_concurrency" {
-  type = number
+  type    = number
   default = 0
 }
