@@ -1,8 +1,7 @@
 - ServiceName: tag-test-fargate-3-single-app
   ClusterName: sedai-labs-ecs-02
   Region: o8alcz6a/us-east-1
-  ---
-desiredCount: 2
+  desiredCount: 2
 taskCpuHardLimitInUnits: 256.0
 taskMemoryHardLimitInMiB: null
 cpuUnitsInTaskDefinition: null
