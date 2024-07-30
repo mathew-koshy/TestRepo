@@ -3,3 +3,8 @@ Properties:
   FunctionName: HelloWorld
   MemorySize: 1024
   Timeout: 60
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: AVLambda
+  MemorySize: 256
+  Timeout: 110
