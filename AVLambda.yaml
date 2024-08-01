@@ -1,0 +1,6 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: AVLambda
+  MemorySize: 256
+  Timeout: 110
+---
