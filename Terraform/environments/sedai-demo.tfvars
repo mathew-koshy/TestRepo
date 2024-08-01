@@ -7,7 +7,7 @@ memory_size = {
 
 timeout = {
   test-lambda-states            = 60
-  pc-insights-test              = 30
+  pc-insights-test              = 110
   sedai-labs-lambda-OutOfMemory = 180
   pc-on-lambda-ac-test          = 180
 }
