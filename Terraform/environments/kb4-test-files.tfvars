@@ -33,49 +33,49 @@ phisher_api_url = "https://api-staging.phisher.knowbe4.com"
 
 # Task Counts
 task_desired = {
-  web                      = 1
-  landing                  = 1
-  console                  = 1
-  worker-primary           = 1
+  web            = 1
+  landing        = 1
+  console        = 1
+  worker-primary = 2
 }
 
 task_minimum = {
-  web                      = 1
-  landing                  = 1
-  console                  = 1
-  worker-primary           = 1
+  web            = 1
+  landing        = 1
+  console        = 1
+  worker-primary = 1
 }
 
 task_maximum = {
-  web                      = 1
-  landing                  = 1
-  console                  = 1
-  worker-primary           = 1
+  web            = 1
+  landing        = 1
+  console        = 1
+  worker-primary = 1
 }
 
 cpu = {
-  web                      = 256
-  landing                  = 256
-  console                  = 2048
-  worker-primary           = 512
+  web            = 256
+  landing        = 256
+  console        = 2048
+  worker-primary = 128
 }
 
 hard_mem_limit = {
-  web                      = 2048
-  landing                  = 2048
-  console                  = 4096
-  worker-primary           = 1024
+  web            = 2048
+  landing        = 2048
+  console        = 4096
+  worker-primary = 1024
 }
 
 sidekiq_maxmem = {
-  web                      = 0 # not relevant
-  landing                  = 0 # not relevant
-  console                  = 3072
-  worker-primary           = 768
+  web            = 0 # not relevant
+  landing        = 0 # not relevant
+  console        = 3072
+  worker-primary = 768
 }
 
 timeout = {
-  dropkik-fallback-sqs  = 900
+  dropkik-fallback-sqs = 900
 }
 
 cloudfront_enabled = true
@@ -130,11 +130,11 @@ zenka_enabled = false
 
 enable_dropkik_logging = false
 
-insided_sso_url      = "sso.api.almostinsided.com"
-insided_api_url      = "api2-eu-west-1.almostinsided.com"
+insided_sso_url = "sso.api.almostinsided.com"
+insided_api_url = "api2-eu-west-1.almostinsided.com"
 
 insided_customer = "knowbe4-en-staging"
-insided_role_id = "12"
+insided_role_id  = "12"
 
 db_user = {
   web     = "kmsat_web"
