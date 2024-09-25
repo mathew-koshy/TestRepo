@@ -1,0 +1,6 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: pc-on-lambda-ac-test
+  MemorySize: 192
+  Timeout: 60
+---
