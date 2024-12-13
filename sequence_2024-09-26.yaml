@@ -1,0 +1,21 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: pc-on-lambda-ac-test
+  MemorySize: 192
+  Timeout: 60
+---
+ServiceName: ecsapi-demo-ServiceFoodstoreFoods-NEzDhmkdAktn
+ClusterName: ecsapi-demo-ECSCluster-jhZ5TG8BRHdX
+Region: us-east-1
+desiredCount: 2
+taskCpuHardLimitInUnits: 128.0
+taskMemoryHardLimitInMiB: 128.0
+containerLimits:
+- containerName: "Jackdaw-I-1C2G-3C"
+  containerImage: "072125767554.dkr.ecr.us-east-1.amazonaws.com/sedai-labs/jackdaw-one:0.0.1"
+  memorySoftLimit: 413
+  memoryHardLimit: 413
+  cpuSoftLimit: 0
+autoscalingConfig: null
+
+---
