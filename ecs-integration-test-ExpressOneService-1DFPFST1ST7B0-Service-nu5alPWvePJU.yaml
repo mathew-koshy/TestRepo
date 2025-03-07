@@ -1,0 +1,15 @@
+ServiceName: ecs-integration-test-ExpressOneService-1DFPFST1ST7B0-Service-nu5alPWvePJU
+ClusterName: ecs-integration-test
+Region: us-east-1
+desiredCount: 1
+taskCpuHardLimitInUnits: null
+taskMemoryHardLimitInMiB: null
+containerLimits:
+- containerName: "Express-One-ICIIG-IIIC"
+  containerImage: "072125767554.dkr.ecr.us-east-1.amazonaws.com/sedai-labs/express-one:0.0.1"
+  memorySoftLimit: 406
+  memoryHardLimit: 525
+  cpuSoftLimit: 256
+autoscalingConfig: null
+
+---
