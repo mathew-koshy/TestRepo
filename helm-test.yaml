@@ -124,11 +124,11 @@ maestro:
     resources:
         enabled: true
         limits:
-            cpu: "400m"
-            memory: "400Mi"
+            cpu: "192"
+            memory: "0"
         requests:
-            cpu: "200m"
-            memory: "256Mi"
+            cpu: "60"
+            memory: "0"
     podAnnotations:
         admission.datadoghq.com/js-lib.version: v5.37.1
         configs.sedai.io/default_repo_path: "RocketBus/clickbus-platform-bff"
