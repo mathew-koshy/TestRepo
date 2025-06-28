@@ -1,0 +1,162 @@
+global:
+    datadog:
+        env: staging
+    autoscaling:
+        enabled: true
+        targetCPUUtilizationPercentage: 75
+    envVars:
+        APP_PORT: "8080"
+        NODE_CONFIG_ENV: staging
+        SALES_FORCE_TOKEN_URI: https://mcm3fsckbjn8tzb16w1v5-mn7300.auth.marketingcloudapis.com/v2/token
+        FRONTEND_HOST: https://www-staging.clickbus.com.br
+        SERVER_HOST: https://bff-staging.clickbus.com
+        JWT_REFRESH_EXPIRES_IN: 180d
+        JWT_EXPIRES_IN: 120s
+        JWT_AUTH_GUARD_ENABLE: true
+        JWT_AUTH_GLOBAL_ENABLE: false
+        API_TOKEN_GLOBAL_ENABLE: false
+        API_TOKEN_GUARD_ENABLE: true
+        TEMPORARY_TOKEN_EXPIRES_IN: 30m
+        TEMPORARY_TOKEN_GUARD_ENABLE: true
+        SECURE_TOKEN_SALT: "2a8e4281-9e42-342a-af45-9132c80de00e"
+        LOG_SERVICE_REQUEST: true
+        DD_LOGS_INJECTION: true
+    envFrom:
+      - secretRef:
+            name: platform-bff-web-keys
+    ingress:
+        external: true
+        hosts:
+          - bff-staging.clickbus.com
+          - platform-bff.stg.clickbus.net
+        tls:
+          - secretName: platform-bff-tls
+            hosts:
+              - platform-bff.stg.clickbus.net
+web:
+    resources:
+        enabled: true
+        limits:
+            cpu: "400m"
+            memory: "400Mi"
+        requests:
+            cpu: "200m"
+            memory: "256Mi"
+    podAnnotations:
+        admission.datadoghq.com/js-lib.version: v5.37.1
+        configs.sedai.io/default_repo_path: "RocketBus/clickbus-platform-bff"
+        configs.sedai.io/variables_file_path: "charts/platform-bff/environments/stg/values.yaml"
+        configs.sedai.io/container.web.cpu_request: "web.resources.requests.cpu"
+        configs.sedai.io/container.web.cpu_limit: "web.resources.limits.cpu"
+        configs.sedai.io/container.web.memory_request: "web.resources.requests.memory"
+        configs.sedai.io/container.web.memory_limit: "web.resources.limits.memory"
+    autoscaling:
+        minReplicas: 1
+        maxReplicas: 2
+    envVars:
+        CLIENT_PREFIX_PATH: web
+        SECURE_TOKEN_GUARD_ENABLE: true
+        SECURE_TOKEN_GLOBAL_ENABLE: true
+app:
+    resources:
+        enabled: true
+        limits:
+            cpu: "192"
+            memory: "0"
+        requests:
+            cpu: "60"
+            memory: "0"
+    podAnnotations:
+        admission.datadoghq.com/js-lib.version: v5.37.1
+        configs.sedai.io/default_repo_path: "RocketBus/clickbus-platform-bff"
+        configs.sedai.io/variables_file_path: "charts/platform-bff/environments/stg/values.yaml"
+        configs.sedai.io/container.app.cpu_request: "app.resources.requests.cpu"
+        configs.sedai.io/container.app.cpu_limit: "app.resources.limits.cpu"
+        configs.sedai.io/container.app.memory_request: "app.resources.requests.memory"
+        configs.sedai.io/container.app.memory_limit: "app.resources.limits.memory"
+    autoscaling:
+        minReplicas: 1
+        maxReplicas: 2
+partners:
+    resources:
+        enabled: true
+        limits:
+            cpu: "400m"
+            memory: "400Mi"
+        requests:
+            cpu: "200m"
+            memory: "256Mi"
+    podAnnotations:
+        admission.datadoghq.com/js-lib.version: v5.37.1
+        configs.sedai.io/default_repo_path: "RocketBus/clickbus-platform-bff"
+        configs.sedai.io/variables_file_path: "charts/platform-bff/environments/stg/values.yaml"
+        configs.sedai.io/container.partners.cpu_request: "partners.resources.requests.cpu"
+        configs.sedai.io/container.partners.cpu_limit: "partners.resources.limits.cpu"
+        configs.sedai.io/container.partners.memory_request: "partners.resources.requests.memory"
+        configs.sedai.io/container.partners.memory_limit: "partners.resources.limits.memory"
+    autoscaling:
+        minReplicas: 1
+        maxReplicas: 2
+cbo:
+    resources:
+        enabled: true
+        limits:
+            cpu: "400m"
+            memory: "400Mi"
+        requests:
+            cpu: "200m"
+            memory: "256Mi"
+    podAnnotations:
+        admission.datadoghq.com/js-lib.version: v5.37.1
+        configs.sedai.io/default_repo_path: "RocketBus/clickbus-platform-bff"
+        configs.sedai.io/variables_file_path: "charts/platform-bff/environments/stg/values.yaml"
+        configs.sedai.io/container.cbo.cpu_request: "cbo.resources.requests.cpu"
+        configs.sedai.io/container.cbo.cpu_limit: "cbo.resources.limits.cpu"
+        configs.sedai.io/container.cbo.memory_request: "cbo.resources.requests.memory"
+        configs.sedai.io/container.cbo.memory_limit: "cbo.resources.limits.memory"
+    autoscaling:
+        minReplicas: 1
+        maxReplicas: 2
+    envVars:
+        JWT_EXPIRES_IN: 10m
+        JWT_REFRESH_EXPIRES_IN: 20m
+maestro:
+    resources:
+        enabled: true
+        limits:
+            cpu: "400m"
+            memory: "400Mi"
+        requests:
+            cpu: "200m"
+            memory: "256Mi"
+    podAnnotations:
+        admission.datadoghq.com/js-lib.version: v5.37.1
+        configs.sedai.io/default_repo_path: "RocketBus/clickbus-platform-bff"
+        configs.sedai.io/variables_file_path: "charts/platform-bff/environments/stg/values.yaml"
+        configs.sedai.io/container.maestro.cpu_request: "maestro.resources.requests.cpu"
+        configs.sedai.io/container.maestro.cpu_limit: "maestro.resources.limits.cpu"
+        configs.sedai.io/container.maestro.memory_request: "maestro.resources.requests.memory"
+        configs.sedai.io/container.maestro.memory_limit: "maestro.resources.limits.memory"
+    autoscaling:
+        minReplicas: 1
+        maxReplicas: 2
+api:
+    resources:
+        enabled: true
+        limits:
+            cpu: "400m"
+            memory: "400Mi"
+        requests:
+            cpu: "200m"
+            memory: "256Mi"
+    podAnnotations:
+        admission.datadoghq.com/js-lib.version: v5.37.1
+        configs.sedai.io/default_repo_path: "RocketBus/clickbus-platform-bff"
+        configs.sedai.io/variables_file_path: "charts/platform-bff/environments/stg/values.yaml"
+        configs.sedai.io/container.api.cpu_request: "api.resources.requests.cpu"
+        configs.sedai.io/container.api.cpu_limit: "api.resources.limits.cpu"
+        configs.sedai.io/container.api.memory_request: "api.resources.requests.memory"
+        configs.sedai.io/container.api.memory_limit: "api.resources.limits.memory"
+    autoscaling:
+        minReplicas: 1
+        maxReplicas: 2
