@@ -1,0 +1,15 @@
+ServiceName: ecs-integration-test-GrizzlyTwoService-H2BXYMV1EK63-Service-Eva2dTYJdjwx
+ClusterName: ecs-integration-test
+Region: us-east-1
+desiredCount: 2
+taskCpuHardLimitInUnits: null
+taskMemoryHardLimitInMiB: null
+containerLimits:
+- containerName: "Grizzly-Two-IICIG-IIIG"
+  containerImage: "072125767554.dkr.ecr.us-east-1.amazonaws.com/sedai-labs/grizzly-two:0.0.1"
+  memorySoftLimit: 537
+  memoryHardLimit: 914
+  cpuSoftLimit: 256
+autoscalingConfig: null
+
+---
