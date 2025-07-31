@@ -1,0 +1,100 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: S3TrafficSimulator
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: sedai-labs-lambda-NearMemoryLimit-KlXKvvRBUVgG
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: sedai-labs-lambda-OutOfMemory-c2O85kkOEnOa
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: simple-lambda-ac-test
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: taps-demo-timeout-test
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: ac-on-lambda-ac-test
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: sedai-avlambda-control-center-production-function
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: sedai-labs-lambda-InvokeBySQS-nzX1EcSEzoo6
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: sedai-labs-lambda-HighResponseTime-wBEkL8t7p3jJ
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: sedai-labs-lambda-ImitateColdStart-GsCDXqkBRgsX
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: sedai-labs-lambda-MoreThan15-MgyXhznElGd0
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: EcsCdkWebServerStack-CustomVpcRestrictDefaultSGCus-pLq2IQWqCQNY
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: pc-on-lambda-ac-test
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: pc-on-lambda-ac-test:1
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: iamrole-test
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: telemetryTest
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: sedai-labs-lambda-LowResponseTime-O0DU8mD4DTCp
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: DatadogIntegration-DatadogA-DatadogAPICallFunction-WyMLyKaJBCAT
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: sedai-labs-lambda-ThrowException-kpCsB7X4wqFM
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: ecs-integration-test-Life-LifecycleHandlerFunction-d4ehEPw5GBWQ
+  MemorySize: 
+  Timeout: 
