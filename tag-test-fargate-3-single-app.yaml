@@ -1,0 +1,17 @@
+ServiceName: tag-test-fargate-3-single-app
+ClusterName: sedai-labs-ecs-02
+Region: o8alcz6a/us-east-1
+desiredCount: 2
+taskCpuHardLimitInUnits: 256.0
+taskMemoryHardLimitInMiB: null
+cpuUnitsInTaskDefinition: null
+memoryMiBInTaskDefinition: null
+containerLimits:
+- containerName: "ecs-ec2-container"
+  containerImage: "072125767554.dkr.ecr.us-east-1.amazonaws.com/sedai/demo-node-app:latest"
+  memorySoftLimit: 256
+  memoryHardLimit: 256
+  cpuSoftLimit: 0
+autoscalingConfig: null
+
+---
